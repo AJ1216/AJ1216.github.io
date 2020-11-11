@@ -182,7 +182,6 @@ header ul li a
 }
 
 
-@media {
-
-
+@media screen and (max-width: 481px) {
+    
 }
