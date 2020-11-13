@@ -14,39 +14,55 @@
 
     <body>
         <section>
+            <div class="circle"></div>
             <header>
-                    <a class="logo" href="index.html"><img src="img/logo1.png"></a>
+                    <a href="index.html"><img src="/img/starsicon.png" class="logo"></a>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Feedback</a></li>
-                    </ul>
-
-                    <div class"content">
-                        <div class="textbox">
-                            <h2>Try something different<br>It's not just cofee<br><span>It's Starbucks</span></h2>
-                            <P>We’re working hard to put the health and well-being of our partners and customers first in all that we do.</P>
-                            <a href=https://stories.starbucks.com/stories/2020/navigating-through-covid-19/?utm_source=hero&utm_medium=homepage&utm_campaign=covid19">Learn more</a>
-                    </div>
-                    <div class="imgbox">
-                        <img src="img/cof2.png" class="star">
-        
-                    </div>
-
-                    <h1>Welcome Snap users</h1>
-                    <p>this is a test<br>Website</p>
-                    <p>will be updated soon</p>
-
+                    </ul>     
             </header>
-
-       
+            <div class="content">
+                <div class="textbox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <p>
+                         We’re working hard to put the health and well-being of our partners and customers first in all that we do.
+                    </p>
+                    <a href="https://stories.starbucks.com/stories/2020/navigating-through-covid-19/?utm_source=hero&utm_medium=homepage&utm_campaign=covid19%22">Click here to Learn More</a>
+                </div>
+                <div class="imgbox">
+                    <img src="/img/cof2.png" class="starbucks">
+                </div>            
+            </div>
+            <ul class="thumb">
+                <li><img src="/img/thumb1.png" onclick="imgSlider('/img/img1.png')changeCircleColor('#017143')"></li>
+                <li><img src="/img/thumb2.png" onclick="imgSlider('/img/img2.png')changeCircleColor('#eb7495')"></li>
+                <li><img src="/img/thumb3.png" onclick="imgSlider('/img/img3.png')changeCircleColor('#d752b1')"></li> 
+            </ul>
+            <ul class="sci">
+                <a href="https://www.facebook.com/Starbucks"><li><img src="/img/fbicon.svg" alt=""></li></a>
+                <a href="https://twitter.com/Starbucks"><li><img src="/img/twittericon.svg" alt=""></li></a>
+                <a href="https://www.instagram.com/starbucks"><li><img src="/img/igicon.svg" alt=""></li></a>
+            </ul>
+        
         </section>
+
+        <script type="text/javascript">
+            
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src=anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background= color;
+            }
+
+
+        </script>
+
     
-
     </body>
-
-
-
-
 </html>
